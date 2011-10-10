@@ -1,0 +1,46 @@
+Aufgaben für Linux Install Party
+--------------------------------
+
+ 1. Terminal öffnen (z.B. Anwendungen->Zubehör->Terminal oder Alt-F2 und "gnome-terminal")
+ 2. Verzeichnisinhalt anzeigen lassen (ls)
+    (ls)
+ 3. Verzeichnis "LIP" anlegen im Home-Ordner (mkdir)
+    (mkdir LIP)
+ 4. Archiv herunterladen (wget)
+		(wget ...url...)
+ 5. Archiv entpacken (tar -xf)
+		(tar -xf Ordner.tar.gz)
+ 6. Kopieren nach LIP (cp -r)
+    (cp -r Ordner LIP/)
+ 7. Archiv löschen (rm)
+		(rm Ordner.tar.gz)
+ 8. Entpackten Ordner löschen (rm -r)
+    (rm -r Ordner)
+ 9. Ins Verzeichnis "LIP" wechseln (cd)
+    (cd LIP)
+10. Ins Verzeichnis "Ordner" wechseln (cd)
+    (cd Ordner)
+11. "Bilder" umbennen in "Tux" (mv)
+    (mv Bilder Tux)
+12. In umbenannten Ordner wechseln (cd)
+    (cd Tux)
+13. Ordnerinhalt geordnet anzeigen lassen (ls -l)
+    (ls -l)
+14. Datei "13...png" umbennen in Größe der Datei "...png" (mv)
+    (mv 13-37444.png 68911.png)
+15. Datei anzeigen lassen (eog)
+    (eog 68911.png)
+16. Bild mit Anfang "42" finden. Welche Nummer kommt dahinter? (find -name, "*" als Platzhalter):
+    (find -name "42*", Nummer 49935)
+17. Ins übergeordnete Verzeichnis wechseln (cd)
+    (cd ..)
+18. Textdatei "Readme.txt" anzeigen lassen (less, "q" verlässt)
+	  (less Readme.txt)
+19. Textdateien "1" - "4" zusammenfügen zu neuer Datei "5". Was kommt herau? (cat, >)
+    (cat 1 2 3 4 > 5, Bild von Gnu)
+
+############################################
+20. fortune
+21. ddate
+22. sudo apt-get install sl
+    sl
