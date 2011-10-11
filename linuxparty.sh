@@ -11,25 +11,6 @@ then
 fi
 
 
-#Allgemeine Programme, Codecs, etc. installieren (VPN, LaTeX, gcc, Flash, unrar...)
-
-echo "Programme, die für alle Fachrichtungen interressant sind (VPN, LaTeX, Flash, unrar, etc.)"
-echo "Magst du mit der Installation dieser fortfahren? (y/n)"
-
-read allgemein
-
-
-if [ "$allgemein" = "y" -o "$allgemein" = "Y" ]
-	then apt-get -y --quiet install ubuntu-restricted-extras;
-	echo "Codec Installation abgeschlossen";
-	apt-get install -y build-essential gcc g++ make automake vpnc network-manager-vpnc pwgen;
-	apt-get install texlive-full;
-	echo "Development Programme, VPN und LaTeX abgeschlossen";
-else
-	echo "Es wurde nichts installiert"
-fi
-
-
 #Medibuntu einbinden
 
 echo "Sollen die Medibuntu-Paketquellen hinzugefügt werden? (y/n)"
@@ -51,6 +32,23 @@ else
 	echo "Es wurde nichts installiert"
 fi
 
+#Allgemeine Programme, Codecs, etc. installieren (VPN, LaTeX, gcc, Flash, unrar...)
+
+echo "Programme, die für alle Fachrichtungen interressant sind (VPN, LaTeX, Flash, unrar, etc.)"
+echo "Magst du mit der Installation dieser fortfahren? (y/n)"
+
+read allgemein
+
+
+if [ "$allgemein" = "y" -o "$allgemein" = "Y" ]
+	then apt-get -y --quiet install ubuntu-restricted-extras;
+	echo "Codec Installation abgeschlossen";
+	apt-get install -y build-essential gcc g++ make automake vpnc network-manager-vpnc pwgen;
+	apt-get install texlive texlive-doc-de texlive-latex-extra texlive-lang-german;
+	echo "Development Programme, VPN und LaTeX abgeschlossen";
+else
+	echo "Es wurde nichts installiert"
+fi
 
 #Fachrichtung wählen
 
